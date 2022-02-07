@@ -1,0 +1,31 @@
+header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-bottom: 2px solid #e0daf0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.current-country {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+@media (max-width:920px) {
+  header {
+    justify-content: flex-start;
+  }
+
+  .current-country {
+   width:40%;
+   text-align: right;
+   justify-content: right;
+  }
+}

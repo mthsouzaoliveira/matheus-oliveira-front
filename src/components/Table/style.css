@@ -1,0 +1,90 @@
+.table {
+	display: grid;
+	height: 50vh;
+	grid-template-columns: 1fr 4fr;
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: #fff;
+	box-shadow: 0 0 1em #e5e4e4;
+}
+
+.table-filter {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.table-item {
+	color: #474071;
+	font-size: 12px;
+	font-weight: 600;
+	text-align: center;
+	width: 160px;
+	padding: 10px;
+}
+
+.table-header {
+	border-right: 1px solid #e0daf0;
+}
+
+.table-header,
+.table-rows {
+	display: unset;
+}
+
+.table-body {
+	display: flex;
+	overflow-y: scroll;
+	justify-content: flex-start;
+}
+
+.table-body div {
+	padding-left: 0px;
+	width: 100px;
+	height: 25px;
+}
+
+.table-header div {
+	width: 110px;
+	height: 25px;
+	text-align: left;
+}
+
+.table:first-child {
+	margin-top: 15px;
+}
+
+.date-filter-fields {
+  display: flex;
+  align-items: center;
+  gap:10px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.date-filter-field {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width:480px) { 
+  .date-filter-fields {
+   display: block;
+  }
+
+  .date-filter-field input {
+     margin:5px;
+     width: 100%;
+   }
+
+   .date-filter-field:last-child {
+    margin-bottom:20px;
+    width: 100%;
+  }
+}
+
+@media ( max-width:1024px) {
+	.table {
+		height: 50vh;
+	}
+}

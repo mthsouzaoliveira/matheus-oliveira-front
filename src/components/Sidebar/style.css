@@ -1,0 +1,9 @@
+aside {
+  min-width: 310px;
+}
+
+@media (max-width:920px) {
+  aside {
+    display: none;
+  }
+}

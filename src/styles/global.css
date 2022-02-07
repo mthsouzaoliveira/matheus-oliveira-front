@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e0daf0;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e0daf0;
+}
+
+.confirmed-color {
+  color: #a28eeb
+}
+
+.recovered-color {
+  color: #02728c;
+}
+
+.active-color {
+  color: #C4AA89;
+}
+
+.deaths-color {
+  color: #c72a28;
+}

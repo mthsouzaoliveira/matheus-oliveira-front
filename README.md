@@ -1,46 +1,130 @@
-![](https://lh3.googleusercontent.com/-SjJCP2AntwI/XoYRxI-hBjI/AAAAAAAABA4/bFi0th7AKGgQFVIOB8L-GiWSZriYhI6MgCK8BGAsYHg/s0/2020-04-02.png)
-# Instituto Atlântico React Developer Challenge
+<div id="top"></div>
 
-Hi! this is a simple challenge for job positions at Instituto Atlântico. This challenge consists of reproducing data from a public API on a ReactJS web app. You are free to use any additional libs, npm packages, design frameworks (like BootStrap or Material), CSS frameworks or bundlers, as long as you use React! To start, simply **fork** this repository, and when you're done, submit a Pull Request for us to review your code.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <h3 align="center"> Dashboard COVID-19 </h3>
 
-### App Description
+  <p align="center">
+    <br />
+    <a href="#">View Demo</a>
+  </p>
+</div>
 
-In this challenge you will create a React Web App that interacts with the [COVID19 Public API](https://covid19api.com/).
 
-* **GET:** World Total Cases
 
-  _The App should show total amount of confirmed, recovered and the total of deaths caused by COVID19._
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
+![Product Name Screen Shot][product-screenshot]
+
+Project built to provide updated data on cases of covid in the world and in specific countries. 
+With responsive layout, the application can be accessed from any device.
+
+
+
+### Built With
+* [React.js](https://reactjs.org)
+* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS) 
+* [Typescript](https://www.typescriptlang.org/docs)
+
+### Prerequisites
+
+* Node https://nodejs.org/en/docs/
   
-* **GET:** Cases By Country
+  Or
 
-  _The user must be able to search for country specific data. This can be done either with a dropdown or with a standard text input. This should shown the current count of confirmed, recovered and the total of deaths caused by COVID19 in that country._
+* Docker https://docs.docker.com/get-docker/
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Instituto-Atlantico/matheus-oliveira-front.git
+   ```
+2. Install Packages
+   ```sh
+   npm install
+   ```
+    or
+
+    ```sh
+    yarn install
+    ```
+3. Open Project
+    ```sh
+     cd Project-Name
+    ``` 
+4. Init project
+    ```sh
+     npm run start
+    ``` 
+    or
+
+    ```sh
+     yarn start
+    ``` 
+
+    Using Docker
+
+    ```sh
+    docker-compose up
+    ``` 
+5. Access app in the browser 
   
-* **GET:** Cases By Country On a Specific Date
+    ```sh
+    http://localhost:3000
+    ``` 
+    
 
-  _The user will be able to select a specific date period for the desired country's data._
+## Responsive Design
+ 1. Mobile
   
-  * **GET:** List Cases of a Country from a time period
+  ![mobile-screenshot]
 
-    _If the user selects a time period bigger than a day, then the page must list the data for COVID19 cases for each day from the selected time period._
+ 2. Tablet
+
+  ![tablet-screenshot]
   
+
+## Components
+All components were created using only React Js and CSS. I avoided the use of frameworks and libraries, as the intention was to demonstrate my knowledge with CSS AND JS.
+
+    1. Select
   
-### Some observations and tips
+  ![component-select-screenshot]
 
-* Make sure to write a nice README telling us a bit about your code, like what libs or frameworks you used.
-* The README must also include instructions to run your code.
-* You will be evaluted for: code writing, patterns, structure, readibility, size and elegance (among other things).
-* Your ability to write and document consistent code in english will also be evaluated.
-* Push your code even if you do not meet all the requirements. We are looking to see if you are capable of learning new things and how you work, any effort will count.
-* Feel free to make any changes or add something to the challenge, just remember to tell us about it in the README.
-* Use your creativity and skills to make a nice, responsive design. This is the opportunity to show your CSS and JS skills.
-* Using Functional Components instead of Class Components will be a bonus.
-* Making good use of standard coding patterns and avoiding repetition is a desired skill.
-* Creating simple, reusable components and reusing them across your code is a desired skill.
-* Virtualization is not mandatory, but will be a bonus. At Atlântico, we often use [Docker](https://www.docker.com/), and you can use [Docker Toolbox](https://docs.docker.com/toolbox/overview/) if your computer does not meet the requirements for Docker Desktop.
-* Hosting is not mandatory and you will not be penalized, but it is a big bonus. Github Pages offers a nice and free way to host simple web apps, but you could also try [Heroku](https://www.heroku.com/). _Hint: For an even bigger bonus, user [Webpack](https://webpack.js.org/) to build your app for production._ 
-* Docs for the COVID19 Public API: https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest
+    2. Panel
+
+  ![component-panel-screenshot]
+  
+
+    3. Table
+
+  ![component-table-screenshot]
+  
 
 
-
-
-**Good Luck!**
+[product-screenshot]: readme-assets/readme-thumb.png
+[component-panel-screenshot]: readme-assets/PanelComponent.png
+[component-table-screenshot]: readme-assets/tableComponent.png
+[component-select-screenshot]: readme-assets/selectComponent.png
+[mobile-screenshot]: readme-assets/mobile.jpeg
+[tablet-screenshot]: readme-assets/tablet.jpeg
