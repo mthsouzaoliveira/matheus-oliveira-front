@@ -7,7 +7,7 @@
 
   <p align="center">
     <br />
-    <a href="#">View Demo</a>
+   <a href="https://mths-dashboard.herokuapp.com">View Demo</a>
   </p>
 </div>
 
